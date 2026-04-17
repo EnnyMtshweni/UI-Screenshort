@@ -1,0 +1,325 @@
+:root {
+    --primary: #0f172a;
+    --accent: #c2410c;
+    --bg: #ffffff;
+    --surface: #f1ece5;
+    --text: #1e293b;
+    --spacing: 20px;
+    --radius: 10px;
+}
+
+/* Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* Top Bar */
+.top-bar {
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing);
+}
+
+.top-bar a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.top-bar a:last-child {
+    color: #2f9bed;
+}
+
+/* Hero Header */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.subscribe {
+    background: #0f172a;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: none;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+.subscribe:hover {
+    background: #111426;
+}
+
+/* Page Wrapper */
+.page-wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 10px 0 60px;
+}
+
+.content-panel {
+    background: var(--surface);
+    margin: 28px auto 0;
+    padding: 44px 44px 28px;
+    border-top: 1px solid #e7e1d8;
+    width: 100%;
+}
+
+/* Hero Content */
+.hero-content {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.tag {
+    background: #f7f4ed;
+    color: #7d7a75;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+}
+
+.hero-content h2 {
+    font-family: 'Georgia', serif;
+    font-size: 56px;
+    color: #0f172a;
+    line-height: 1.08;
+    margin: 24px 0 18px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.85;
+    color: #556077;
+    max-width: 520px;
+    margin: 0 0 32px;
+    font-weight: 400;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.buttons a {
+    color: #0f172a;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.buttons a:hover {
+    color: #c2410c;
+}
+
+.primary {
+    background: #c2410c;
+    color: white;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1.1;
+    box-shadow: 0 12px 24px rgba(194, 65, 12, 0.18);
+}
+
+.primary:hover {
+    background: #a7340c;
+}
+
+/* Latest Section */
+.latest {
+    background: transparent;
+    border-radius: 0;
+    padding: 36px 0 0;
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid #e7e1d8;
+}
+
+.latest-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 28px;
+    padding: 0;
+}
+
+.latest-header h2 {
+    font-family: 'Georgia', serif;
+    font-size: 32px;
+    color: #0f172a;
+    margin: 0;
+    font-weight: 600;
+}
+
+.latest-header a {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.latest-header a:hover {
+    color: #0f172a;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 26px;
+    margin-top: 32px;
+    padding: 0;
+}
+
+/* Cards */
+.card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 0 8px 16px rgba(15, 23, 42, 0.08);
+}
+
+.card .image {
+    height: 160px;
+    background: #c4a484;
+}
+
+.card.large .image {
+    height: 310px;
+}
+
+.image.blue {
+    background: #93afca;
+}
+
+.image.green {
+    background: #b0c99a;
+}
+
+.category {
+    color: #c2410c;
+    font-weight: 800;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    margin: 18px 18px 8px;
+    text-transform: uppercase;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.card h3 {
+    margin: 0 18px 12px;
+    font-size: 17px;
+    line-height: 1.35;
+    font-family: 'Georgia', serif;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.card p:last-child {
+    margin: 0 18px 18px;
+    font-size: 13px;
+    color: #6b7a8f;
+    font-weight: 400;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    position: relative;
+    padding-left: 42px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.card p:last-child::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #e7e1d8;
+    box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.06);
+}
+
+/* Footer */
+footer {
+    background: transparent;
+    color: white;
+    padding: 0;
+    margin-top: 0;
+}
+
+footer > div {
+    background: #0f172a;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 28px 20px 24px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #c2410c;
+}
+
+footer a:first-child {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
